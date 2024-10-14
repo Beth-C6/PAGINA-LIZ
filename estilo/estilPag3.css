@@ -1,0 +1,82 @@
+.contenedor{
+    padding: 7px;
+    background-color: rgb(0, 13, 41);
+    display: grid;
+    grid-gap:10px;
+    grid-template-columns: 2fr 2fr 3fr 2fr;
+    grid-template-areas:"header header header header"
+                        "nav nav nav nav"
+                        "alert alert carru carru"
+                        "card1 text text card2"
+                        "card1 table table card2"
+                        "footer footer footer footer";
+}
+.contenedor .header{
+    grid-area: header;
+    background-color: rgb(104, 131, 127);
+}
+.contenedor .nav{
+    grid-area: nav;
+    background-color:  rgb(104, 131, 127);
+}
+.contenedor .alert{
+    grid-area: alert;
+    background-color:  rgb(186, 216, 212);
+}
+.contenedor .carru{
+    grid-area: carru;
+    background-color:  rgb(104, 131, 127);
+}
+.contenedor .card1{
+    grid-area: card1;
+    background-color: rgba(27, 46, 77, 0.942);
+}
+.contenedor .card2{
+    grid-area: card2;
+    background-color: rgba(27, 46, 77, 0.942);
+}
+
+.contenedor .text{
+    grid-area: text;
+    background-color: rgb(104, 131, 127);
+}
+
+.contenedor .table{
+    grid-area: table;
+    background-color: rgb(140, 177, 172);
+}
+.contenedor .footer{
+    grid-area: footer;
+    background-color: rgba(27, 46, 77, 0.942);
+    padding: 20px;
+    text-align: center;
+}
+@media screen and (max-width:768px){
+    .contenedor
+    {
+        font-family: 'Times New Roman', Times, serif;
+        grid-template-areas:"header header header header"
+                        "nav nav nav nav"
+                        "alert alert carru carru"
+                        "card1 text text card2"
+                        "card1 table table card2"
+                        "footer footer footer footer";
+    }
+
+}
+@media screen and (max-width:400px){
+    .contenedor
+    {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        grid-template-areas:"header header header header"
+                        "nav nav nav nav"
+                        "alert alert alert alert"
+                        "carru carru carru carru"
+                        "card1 card1 card1 car1"
+                        "text text text text"
+                        "table table table table"
+                        "card2 card2 card2 car2"
+                        
+                        "footer footer footer footer";
+    }
+}   

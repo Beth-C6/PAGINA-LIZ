@@ -1,0 +1,90 @@
+.contenedor{
+    padding: 7px;
+    background-color: rgb(0, 13, 41);
+    display: grid;
+    grid-gap:10px;
+    grid-template-columns: 6fr 3fr;
+    grid-template-areas:"header header"
+                        "nav nav"
+                        "contenido ads"
+                        "footer footer";
+}
+.contenedor .header{
+    grid-area: header;
+    background-color: rgb(104, 131, 127);
+}
+.contenedor .nav{
+    grid-area: nav;
+    background-color:  rgb(104, 131, 127);
+}
+.contenedor .contenido{
+    grid-area: contenido;
+    background-color: rgb(104, 131, 127);
+}
+.contenedor .ads{
+    grid-area: ads;
+    background-color: rgb(104, 131, 127);
+}
+.contenedor .footer{
+    grid-area: footer;
+    background-color: rgba(27, 46, 77, 0.942);
+    padding: 20px;
+    text-align: center;
+}
+
+
+.title{
+    font-family:'Times New Roman', Times, serif;
+}
+
+.btn-custom-left {
+    background-color: lightblue; /* Azul claro */
+    color: black;
+}
+
+.btn-custom-middle {
+    background-color: deepskyblue; /* Azul cielo intenso */
+    color: black;
+}
+
+.btn-custom-right {
+    background-color: steelblue; /* Azul acero */
+    color: white;
+}
+
+p {
+    color: rgb(231, 236, 237); /* Color del texto */
+    margin-top: 10px;
+}
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
+}
+@media screen and (max-width:768px){
+    .contenedor
+    {
+        font-family: 'Courier New', Courier, monospace;
+        grid-template-areas:"header header"
+                        "nav nav"
+                        "contenido ads"
+                        "footer footer";
+    }
+
+}
+@media screen and (max-width:400px){
+    .contenedor
+    {
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        grid-template-areas:"header header "
+                            "nav    nav    "
+                            "contenido  contenido "
+                            "ads  ads "
+                            "footer   footer";
+    }
+}   
